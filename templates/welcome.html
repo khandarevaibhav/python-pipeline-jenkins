@@ -20,8 +20,16 @@
 </head>
 <body>
     <h1>Welcome</h1>
-    <img src="/static/hand.jpeg" alt="Hand Image" class="hand-image">
+    <!-- Replace the image source with the path and filename of your desired image -->
+    <img src="/static/your_image.jpg" alt="Your Image" class="hand-image">
     <p class="welcome-text">Greetings from the Flask web application!</p>
+    <button id="greet-button">Click Me</button>
+    <p id="greet-message" style="display: none;">Hello, How are you?</p>
+    <script>
+        document.getElementById("greet-button").addEventListener("click", function() {
+            document.getElementById("greet-message").style.display = "block";
+        });
+    </script>
 </body>
 </html>
 
